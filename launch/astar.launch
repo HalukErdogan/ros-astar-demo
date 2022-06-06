@@ -1,0 +1,13 @@
+<launch>
+    <!-- Start map server -->
+    <node pkg="map_server" name="map_server" type="map_server" args="$(find astar)/maps/small_maze.yaml"/>
+
+    <!-- Start astar node -->
+    <node pkg="astar" type="astar_node" name="astar_node" output="screen" >
+        <param name="occupancy_map_threshold" value="10"/>          
+        <param name="occupancy_map_inflation_radius" value="0.2"/>
+    </node>
+
+    <!-- Start rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find astar)/rviz/astar.rviz"/>
+</launch>

@@ -21,8 +21,12 @@ and publishes
 /inflated_map
 /optimal_path
 ``` 
-
 is created. One can use the rviz navigation tools to define "/initialpose" and "/move_base_simple/goal" on rviz interface.
+
+To run the demo, run the following command after sourcing the catkin workspace
+```
+roslaunch astar astar.launch
+```
 
 # Example
 

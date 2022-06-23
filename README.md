@@ -2,7 +2,7 @@
 Implementation of A* Graph Search Algorithm for a 2D Path Planning Problem with ROS
 
 # Installation
-This implementation is done as a catkin_ws, so it can be easly compiled with
+This implementation is done as a catkin package, so it can be easly compiled with
 ```
   catkin_make
   catkin build
@@ -21,7 +21,7 @@ and publishes
 /inflated_map
 /optimal_path
 ``` 
-is created. One can use the rviz navigation tools to define "/initialpose" and "/move_base_simple/goal" on rviz interface.
+is created. One can use the rviz navigation tools to set "/initialpose" and "/move_base_simple/goal".
 
 To run the demo, run the following command after sourcing the catkin workspace
 ```
@@ -29,5 +29,5 @@ roslaunch astar astar.launch
 ```
 
 # Example
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Squ91waSqpo/0.jpg)](https://www.youtube.com/watch?v=Squ91waSqpo)
 
